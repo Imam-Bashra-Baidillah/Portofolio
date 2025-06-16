@@ -1,0 +1,414 @@
+/* ==== Reset & Global ==== */
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  color: #333;
+}
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+.layar-penuh {
+  width: 100%;
+}
+
+/* ==== Navigasi ==== */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  line-height: 60px;
+  text-align: center;
+  color: #ffffff;
+  background: transparent;
+  transition: background-color 0.5s ease;
+}
+nav.putih {
+  background-color: #fff;
+}
+nav .logo {
+  float: left;
+  line-height: 55px;
+}
+nav .logo img {
+  vertical-align: middle;
+  width: 120px;
+}
+nav .menu {
+  float: right;
+  height: 60px;
+}
+nav .menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav .menu ul li {
+  line-height: 60px;
+}
+nav ul li a {
+  color: #fff;
+  padding: 0 16px;
+  text-decoration: none;
+}
+nav.putih ul li a {
+  color: #333;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Tombol Menu Mobile ==== */
+.tombol-menu {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+.tombol-menu .garis {
+  height: 3px;
+  background-color: #fff;
+}
+nav.putih .tombol-menu .garis {
+  background-color: #333;
+}
+
+/* ==== Header ==== */
+header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: -1;
+}
+header .intro {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 0 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
+}
+
+header .intro h3 {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+header .intro p {
+  font-size: 15px;
+  font-style: italic;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.7;
+  color: #ffee00;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ==== Tombol ==== */
+.tombol {
+  background-color: #ff0008;
+  color: #fff;
+  display: inline-block;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 42px;
+  font-size: 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.tombol:hover {
+  background-color: #000;
+}
+
+/* ==== Section Umum ==== */
+section {
+  padding: 20px 0;
+}
+section h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+section h3::after {
+  content: "";
+  display: block;
+  width: 52px;
+  margin: 20px auto;
+  border-bottom: 5px solid #f70707;
+}
+section p.ringkasan {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  color: #ababab;
+  margin-bottom: 30px;
+}
+section.abuabu {
+  background-color: #feffff;
+}
+
+/* ==== About Me - Horizontal Cards ==== */
+.konten-isi p {
+  text-align: justify;
+}
+.about-right {
+  margin-top: 20px;
+}
+.about-right h4 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.horizontal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.h-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.h-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.h-card h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #f70707;
+}
+.h-card p {
+  font-size: 12px;
+  color: #444;
+}
+
+/* ==== Komponen: Skills, Experience, Gallery, Map ==== */
+.support, .experience, .gallery, .map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.support > div, .experience > div, .gallery > div, .map .area {
+  text-align: center;
+  width: 300px;
+}
+.support img, .experience img, .gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* ==== Kutipan ==== */
+.quote {
+  background-color: #000;
+  color: #fff;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ==== Footer ==== */
+footer {
+  background: linear-gradient(to right, #000, #1a1a1a);
+  color: #e0e0e0;
+  padding: 10px 0 10px;
+  font-size: 15px;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  text-align: center;
+}
+
+footer .footer-content div {
+  max-width: 300px;
+}
+
+/* Ikon dalam lingkaran */
+footer .icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1201ff;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin: 0 auto 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+footer .icon-circle:hover {
+  background-color: #e60000;
+  transform: scale(1.1);
+}
+
+footer a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #2804f8;
+  text-decoration: underline;
+}
+
+footer .copyright {
+  margin-top: 10px;
+  font-size: 13px;
+  text-align: center;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  color: #aaa;
+}
+
+/* ==== Language Switcher ==== */
+.language-switcher {
+  position: absolute;
+  top: 35px;
+  right: 80px;
+}
+.language-switcher button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+nav.putih .language-switcher button {
+  border-color: #333;
+  color: #333;
+}
+
+/* ==== Resume Button ==== */
+.download-resume {
+  text-align: center;
+  margin-top: 30px;
+}
+.btn-download {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  background-color: #f70707;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+.btn-download:hover {
+  background-color: #f70707;
+  box-shadow: 0 6px 14px rgba(0, 86, 179, 0.3);
+}
+
+/* ==== Responsive ==== */
+@media screen and (max-width: 768px) {
+  .layar-dalam {
+    width: 90%;
+  }
+  .tombol-menu {
+    display: flex;
+  }
+  nav .menu ul {
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: none;
+    width: 200px;
+  }
+  nav .menu ul.show {
+    display: flex !important;
+    flex-direction: column;
+  }
+  nav ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    display: block;
+  }
+  .horizontal-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery > div {
+    width: 50%;
+  }
+  header .intro h3 {
+    font-size: 30px;
+  }
+}

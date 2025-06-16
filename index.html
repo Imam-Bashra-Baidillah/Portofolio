@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portofolio | Imam Bashra Baidillah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <div class="layar-dalam">
+      <div class="logo">
+        <a href="#"><img src="asset/white.png" class="putih" alt="Logo White" /></a>
+        <a href="#"><img src="asset/black.png" class="hitam" alt="Logo Black" /></a>
+      </div>
+      <div class="menu">
+        <a href="#" class="tombol-menu">
+          <span class="garis"></span>
+          <span class="garis"></span>
+          <span class="garis"></span>
+        </a>
+        <ul>
+          <li><a href="#home" data-id="Beranda" data-en="Home">Home</a></li>
+          <li><a href="#about" data-id="Tentang" data-en="About">About</a></li>
+          <li><a href="#skills" data-id="Keahlian" data-en="Skills">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="gallery.html">Gallery</a></li>          
+          <li><a href="map.html">Map</a></li>
+          <li><a href="#contact" data-id="Kontak" data-en="Contact">Contact</a></li>
+        </ul>            
+      </div>
+
+      <!-- Language Switcher -->
+      <div class="language-switcher">
+        <button onclick="setLanguage('id')">Indonesia</button>
+        <button onclick="setLanguage('en')">English</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="layar-penuh">
+    <header id="home">
+      <div class="overlay"></div>
+        <video autoplay muted loop><source src="asset/video.mp4" type="video/mp4"/></video>
+        <div class="intro">
+          <h3 data-id="Halo, Saya Imam Bashra Baidillah" data-en="Hi, I'm Imam Bashra Baidillah">
+            Halo, Saya Imam Bashra Baidillah
+          </h3>
+          <p data-id="Setiap piksel adalah ruang yang memiliki cerita — tugas saya adalah membacakannya untuk dunia." 
+             data-en="Every pixel is a space with a story — my task is to read it to the world.">
+             Setiap piksel adalah ruang yang memiliki cerita — tugas saya adalah membacakannya untuk dunia.
+          </p>
+          <p>
+            <a href="#about" class="tombol" data-id="JELAJAHI PROFIL SAYA" data-en="EXPLORE MY PROFILE">
+              JELAJAHI PROFIL SAYA
+            </a>
+          </p>
+        </div>        
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="layar-dalam">
+          <h3 data-id="Tentang Saya" data-en="About Me">About Me</h3>
+          <p class="ringkasan" data-id="mengubah data spasial menjadi cerita yang bermakna." data-en="turning spatial data into meaningful stories.">Turning spatial data into meaningful stories.</p>
+          
+          <div class="konten-isi">
+            <p style="text-align: center;"
+            data-id="Saya adalah lulusan Geografi dari Universitas Muhammadiyah Surakarta dan saat ini sedang menempuh studi Magister Penginderaan Jauh di Universitas Gadjah Mada. Saya percaya bahwa setiap data spasial menyimpan cerita—dan tugas saya adalah menerjemahkannya menjadi informasi yang bermakna. Dengan latar belakang di bidang geospasial, saya memiliki ketertarikan pada pemetaan, analisis citra satelit, serta eksplorasi teknologi seperti GIS dan penginderaan jauh untuk menjawab tantangan lingkungan, perencanaan wilayah, dan pengelolaan sumber daya alam. Bagi saya, setiap proyek adalah ruang eksplorasi ilmiah dan visual yang berarti. Saya selalu mengutamakan ketelitian analisis, pendekatan inovatif, desain yang komunikatif, serta hasil yang dapat mendukung pengambilan keputusan berbasis data." 
+            data-en="I graduated in Geography from Universitas Muhammadiyah Surakarta and am currently pursuing a Master's degree in Remote Sensing at Universitas Gadjah Mada. I believe every spatial data holds a story—and my role is to translate it into meaningful information. With a background in geospatial science, I am passionate about mapping, satellite imagery analysis, and exploring technologies like GIS and remote sensing to address environmental challenges, regional planning, and natural resource management. For me, every project is a space for scientific and visual exploration. I prioritize analytical precision, innovative approaches, communicative design, and results that support data-driven decision-making.">
+            Saya adalah lulusan Geografi dari Universitas Muhammadiyah Surakarta dan saat ini sedang menempuh studi Magister Penginderaan Jauh di Universitas Gadjah Mada. Saya percaya bahwa setiap data spasial menyimpan cerita—dan tugas saya adalah menerjemahkannya menjadi informasi yang bermakna. Dengan latar belakang di bidang geospasial, saya memiliki ketertarikan pada pemetaan, analisis citra satelit, serta eksplorasi teknologi seperti GIS dan penginderaan jauh untuk menjawab tantangan lingkungan, perencanaan wilayah, dan pengelolaan sumber daya alam. Bagi saya, setiap proyek adalah ruang eksplorasi ilmiah dan visual yang berarti. Saya selalu mengutamakan ketelitian analisis, pendekatan inovatif, desain yang komunikatif, serta hasil yang dapat mendukung pengambilan keputusan berbasis data.
+            </p>
+          </div>
+
+          <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+          <div class="about-right"><h4 data-id="Nilai yang Saya Pegang" data-en="My Core Values">My Core Values</h4>
+            <div class="horizontal-cards">
+              <div class="h-card">
+                <h5 data-id="🎯 Keakuratan" data-en="🎯 Accuracy">🎯 Accuracy</h5>
+                <p data-id="Setiap data memiliki nilai dan harus dikelola dengan cermat." data-en="Every data point has value and must be carefully handled.">Every data point has value and must be carefully handled.</p>
+              </div>
+              <div class="h-card">
+                <h5 data-id="📚 Keterbukaan Belajar" data-en="📚 Open to Learning">📚 Open to Learning</h5>
+                  <p data-id="Saya percaya pada pembelajaran berkelanjutan..." data-en="I believe in continuous learning in the dynamic world of geospatial.">I believe in continuous learning in the dynamic world of geospatial.</p>
+              </div>
+              <div class="h-card">
+                <h5 data-id="🤝 Kolaborasi" data-en="🤝 Collaboration">🤝 Collaboration</h5>
+                <p data-id="Solusi terbaik muncul dari kerja tim lintas disiplin." data-en="The best solutions emerge from cross-disciplinary teamwork.">The best solutions emerge from cross-disciplinary teamwork.</p>
+              </div>
+              <div class="h-card">
+                <h5 data-id="🌱 Kebermanfaatan" data-en="🌱 Impactful">🌱 Impactful</h5>
+                <p data-id="Setiap pekerjaan harus memberi dampak nyata dan aplikatif." data-en="Each job should deliver real and applicable impacts.">Each project should deliver real and applicable impacts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote">
+        <div class="layar-penuh">
+          <p data-id='"Dengan sensor dan data, saya menjelajahi bumi—mengungkap pola, merancang solusi inovatif, dan menanamkan pemahaman demi masa depan yang berkelanjutan."' data-en='"With sensors and data, I explore the Earth—uncovering patterns, designing innovative solutions, and fostering understanding for a more sustainable future."'>
+          "With sensors and data, I explore the Earth—uncovering patterns, designing innovative solutions, and fostering understanding for a more sustainable future."</p>
+          </div>
+      </section>
+
+      <section id="skills">
+        <div class="layar-dalam">
+          <h3 data-id="Kemampuan Saya" data-en="My Skills">My Skills</h3>
+          <p class="ringkasan" data-id="." data-en="turning spatial data into meaningful stories.">Turning spatial data into meaningful stories.</p>
+          <div class="konten-isi">
+            <p style="text-align: center;"
+            data-id="Spesialis geospasial dengan keahlian kuat dalam Sistem Informasi Geografis (SIG) dan Penginderaan Jauh, menggabungkan kemampuan teknis, analisis spasial, dan komunikasi visual untuk mendukung pengambilan keputusan berbasis data. Berpengalaman dalam pengolahan citra satelit, otomatisasi alur kerja geospasial, serta pengembangan alat spasial menggunakan bahasa pemrograman modern." 
+            data-en="A geospatial specialist with strong expertise in Geographic Information Systems (GIS) and Remote Sensing, combining technical proficiency, spatial analysis, and visual communication to support data-driven decision-making. Experienced in processing satellite imagery, automating geoprocessing workflows, and developing spatial tools using modern programming languages.">
+            Spesialis geospasial dengan keahlian kuat dalam Sistem Informasi Geografis (SIG) dan Penginderaan Jauh, menggabungkan kemampuan teknis, analisis spasial, dan komunikasi visual untuk mendukung pengambilan keputusan berbasis data. Berpengalaman dalam pengolahan citra satelit, otomatisasi alur kerja geospasial, serta pengembangan alat spasial menggunakan bahasa pemrograman modern.
+            </p>
+          </div>
+
+          <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+          <div class="layar-dalam" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+            <!-- Strong Critical Analysis -->
+            <div style="flex: 1 1 calc(20% - 20px); text-align: center;">
+              <img src="asset/critical.jpg" alt="Strong Critical Analysis and Problem Solving" style="width: 150px; height: 150px;" />
+              <h6 data-id="Analisis Kritis dan Pemecahan Masalah" data-en="Strong Critical Analysis and Problem Solving">Analisis Kritis dan Pemecahan Masalah</h6>
+              <p data-id="Menganalisis tantangan spasial dan menyusun solusi berbasis data yang efektif dan efisien."
+                data-en="Analyzing spatial challenges and developing effective data-driven solutions.">
+                Menganalisis tantangan dan menyusun metode serta solusi berbasis data yang efektif dan efisien.
+              </p>
+            </div>
+
+            <!-- Manajemen Projek -->
+            <div style="flex: 1 1 calc(20% - 20px); text-align: center;">
+              <img src="asset/project.jpg" alt="Project Management" style="width: 150px; height: 150px;" />
+              <h6 data-id="Manajemen Projek Geospasial" data-en="Geospatial Project Management">Manajemen Projek Geospasial</h6>
+              <p data-id="Perencanaan, pelaksanaan, dan evaluasi proyek spasial dari riset hingga penyajian hasil."
+                data-en="Planning, implementing, and evaluating spatial projects from research to final output.">
+                Perencanaan, pelaksanaan, dan evaluasi proyek maupun riset hingga penyajian hasil.
+              </p>
+            </div>
+            
+            <!-- Kolaborasi Tim -->
+            <div style="flex: 1 1 calc(20% - 20px); text-align: center;">
+              <img src="asset/work.jpg" alt="Team Collaboration" style="width: 150px; height: 150px;" />
+              <h6 data-id="Kerjasama Tim dan Kolaborasi Multidisiplin" data-en="Teamwork & Multidisciplinary Collaboration">
+                  Kerjasama Tim dan Kolaborasi Multidisiplin
+              </h6>
+              <p data-id="Berkolaborasi dengan tim dari berbagai disiplin untuk menghasilkan solusi geospasial yang integratif."
+                data-en="Collaborating with teams from various disciplines to create integrated geospatial solutions.">
+                Berkolaborasi dengan tim dari berbagai disiplin untuk menghasilkan solusi geospasial yang integratif.
+              </p>
+            </div>
+
+            <!-- Visual Komunikasi -->
+            <div style="flex: 1 1 calc(20% - 20px); text-align: center;">
+              <img src="asset/visual.jpg" alt="Visual Communication Skills" style="width: 150px; height: 150px;" />
+              <h6 data-id="Komunikasi Visual" data-en="Visual Communication">
+                  Komunikasi Visual
+              </h6>
+              <p data-id="Mengubah data spasial menjadi visualisasi yang informatif, estetis, dan mudah dipahami untuk mendukung pengambilan keputusan."
+                data-en="Transforming spatial data into informative, aesthetic, and easy-to-understand visualizations to support decision-making.">
+                Mengubah data spasial menjadi visualisasi yang informatif, estetis, dan mudah dipahami untuk mendukung pengambilan keputusan.
+              </p>
+            </div>
+          </div>
+
+          <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+          <div class="about-right">
+            <h4 data-id="Kemampuan Teknis" data-en="My Technical Skills">My Technical Skills</h4>
+              <div class="horizontal-cards">
+                <div class="h-card">
+                  <h5 data-id="🖥️ Perangkat Lunak GIS & RS" data-en="🖥️ GIS & Remote Sensing Software">🖥️ GIS & Remote Sensing Software</h5>
+                  <p data-id="Menguasai QGIS, ArcGIS Pro, ENVI, SNAP, dan Google Earth Engine untuk pengolahan, analisis, dan visualisasi data spasial." data-en="Proficient in QGIS, ArcGIS Pro, ENVI, SNAP, and Google Earth Engine for spatial data processing, analysis, and visualization.">
+                    Proficient in QGIS, ArcGIS Pro, ENVI, SNAP, and Google Earth Engine for spatial data processing, analysis, and visualization.
+                  </p>
+                </div>
+                
+                <div class="h-card">
+                  <h5 data-id="🗂️ Pengolahan Data Spasial" data-en="🗂️ Spatial Data Processing">🗂️ Spatial Data Processing</h5>
+                  <p data-id="Berpengalaman dalam manajemen data raster dan vektor, termasuk integrasi, transformasi, dan basis data spasial seperti PostGIS." data-en="Experienced in managing raster and vector data, including integration, transformation, and spatial databases like PostGIS.">
+                    Experienced in managing raster and vector data, including integration, transformation, and spatial databases like PostGIS.
+                  </p>
+                </div>
+                
+                <div class="h-card">
+                  <h5 data-id="📊 Analisis Statistik Spasial" data-en="📊 Spatial Statistical Analysis">📊 Spatial Statistical Analysis</h5>
+                  <p data-id="Mampu menerapkan regresi spasial, klasifikasi, dan evaluasi akurasi menggunakan Python, R, dan alat statistik geospasial." data-en="Capable of applying spatial regression, classification, and accuracy assessment using Python, R, and geospatial statistical tools.">
+                    Capable of applying spatial regression, classification, and accuracy assessment using Python, R, and geospatial statistical tools.
+                  </p>
+                </div>
+                
+                <div class="h-card">
+                  <h5 data-id="⚙️ Otomatisasi & Pemrograman" data-en="⚙️ Automation & Programming">⚙️ Automation & Programming</h5>
+                  <p data-id="Mengembangkan alat GIS kustom dan mengotomatiskan alur kerja dengan Python (PyQGIS, ArcPy), JavaScript (GEE), dan SQL." data-en="Developing custom GIS tools and automating workflows using Python (PyQGIS, ArcPy), JavaScript (GEE), and SQL.">
+                    Developing custom GIS tools and automating workflows using Python (PyQGIS, ArcPy), JavaScript (GEE), and SQL.
+                  </p>
+                </div>
+              </div>
+
+          </div>
+        </div>   
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="layar-dalam footer-content">
+        <div>
+          <div class="icon-circle"><i class="fas fa-envelope"></i></div>
+          <p>Imambashra.Surakarta@gmail.com</p>
+        </div>
+
+        <div>
+          <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
+          <p>+62 857 1343 3342</p>
+        </div>
+
+        <div>
+          <div class="icon-circle"><i class="fab fa-instagram"></i></div>
+          <p><a href="https://instagram.com/bashraa_" target="_blank">@bashraa_</a></p>
+        </div>
+
+        <div>
+          <div class="icon-circle"><i class="fab fa-linkedin"></i></div>
+          <p><a href="https://www.linkedin.com/in/imam-bashra-b9786729a" target="_blank">
+            www.linkedin.com/in/imam-bashra-b9786729a</a>
+          </p>
+        </div>    
+
+      </div>
+      
+      <div class="layar-dalam copyright">
+        &copy; 2025 Imam Bashra Baidillah. All rights reserved.
+      </div>
+    </footer>           
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>function setLanguage(lang) {document.querySelectorAll('[data-id]').forEach(el => {el.textContent = el.getAttribute('data-' + lang);});}</script>
+  <script src="javascript.js"></script>
+</body>
+</html>

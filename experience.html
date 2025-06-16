@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pengalaman Saya</title>
+      
+        <!-- CSS Eksternal -->
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      
+        <!-- CSS Internal -->
+        <style>
+          /* Tombol Kembali ke Beranda */
+          .btn-back-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin: 20px 30px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #4e54ff, #1900ff);
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(7, 124, 248, 0.4), 0 0 20px rgba(248, 7, 89, 0.2);
+            transition: transform 0.3s ease;
+          }
+      
+          .btn-back-home:hover {
+            background-color: #3367d6;
+          }
+      
+          /* Tombol Unduh Resume */
+          .btn-download {
+            display: inline-block;
+            background-color: #ff0000;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+          }
+      
+          .btn-download:hover {
+            background-color: #218838;
+          }
+      
+          .download-resume {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+          }
+      
+          .center-button {
+            text-align: center;
+            margin-top: 20px;
+          }
+      
+          /* Layout Pengalaman (versi lama) */
+          .experience {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+          }
+      
+          .experience div {
+            text-align: center;
+            width: 250px;
+          }
+      
+          .experience img {
+            width: 100%;
+            border-radius: 8px;
+          }
+      
+          .konten-isi p {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto 40px auto;
+          }
+      
+          /* Layout Pengalaman (foto kiri, teks kanan) */
+          .pengalaman-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+            align-items: flex-start;
+          }
+      
+          .foto-keterangan {
+            width: 250px;
+            flex-shrink: 0;
+            text-align: center;
+          }
+      
+          .foto-keterangan img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+          }
+      
+          .foto-keterangan h6 {
+            font-size: 1rem;
+            margin: 10px 0 5px 0;
+          }
+      
+          .foto-keterangan span {
+            font-size: 0.9rem;
+            color: #555;
+          }
+      
+          .deskripsi-panjang {
+            flex: 1;
+            min-width: 280px;
+          }
+      
+          .deskripsi-panjang p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+          }
+
+          .pengalaman-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+            align-items: flex-start;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+          }
+
+          .pengalaman-wrapper:last-child {
+            border-bottom: none;
+          }
+        </style>
+    </head>      
+      
+    <body>
+        <section id="experience">
+            <div class="layar-dalam">
+                <h3>My Experience</h3>
+                <div class="konten-isi">
+                  <p style="text-align: center;"
+                    data-id="Saya memiliki pengalaman profesional sebagai Tenaga Ahli GIS, Operator GIS, dan Operator Penginderaan Jauh dalam berbagai proyek geospasial. Tanggung jawab saya mencakup pengolahan data spasial, analisis citra satelit, pembuatan peta tematik, serta visualisasi dan pelaporan berbasis GIS. Saya terbiasa bekerja dengan perangkat lunak seperti ArcGIS, QGIS, dan ENVI, serta berkolaborasi dengan tim lintas-disiplin untuk mendukung perencanaan wilayah, pengelolaan sumber daya alam, dan kajian lingkungan." 
+                    data-en="I have professional experience as a GIS Specialist, GIS Operator, and Remote Sensing Operator in various geospatial projects. My responsibilities include spatial data processing, satellite imagery analysis, thematic map creation, as well as GIS-based visualization and reporting. I am proficient in tools such as ArcGIS, QGIS, and ENVI, and used to collaborating with cross-disciplinary teams to support spatial planning, natural resource management, and environmental assessments.">
+                    Saya memiliki pengalaman profesional sebagai Tenaga Ahli GIS, Operator GIS, dan Operator Penginderaan Jauh dalam berbagai proyek geospasial. Tanggung jawab saya mencakup pengolahan data spasial, analisis citra satelit, pembuatan peta tematik, serta visualisasi dan pelaporan berbasis GIS. Saya terbiasa bekerja dengan perangkat lunak seperti ArcGIS, QGIS, dan ENVI, serta berkolaborasi dengan tim lintas-disiplin untuk mendukung perencanaan wilayah, pengelolaan sumber daya alam, dan kajian lingkungan.
+                  </p>
+                </div>          
+                <div class="pengalaman-wrapper">
+                    <!-- Kiri: Foto dan Info Singkat -->
+                    <div class="foto-keterangan">
+                    <img src="asset/gis.jpg" alt="Foto Pengalaman">
+                    <h6>Tenaga Ahli GIS</h6>
+                    <span>Indonesia (2023 - sekarang)</span>
+                    </div>
+                    <!-- Kanan: Paragraf Panjang -->
+                    <div class="deskripsi-panjang">
+                    <p data-id="Sebagai Tenaga Ahli SIG, saya bertanggung jawab dalam analisis spasial, pemodelan geospasial, pengolahan citra satelit, serta pembuatan peta tematik untuk mendukung perencanaan wilayah pesisir dan tata ruang." 
+                        data-en="As a GIS Expert, I was responsible for spatial analysis, geospatial modeling, satellite image processing, and thematic map production to support coastal and spatial planning.">
+                        Sebagai Tenaga Ahli SIG, saya bertanggung jawab dalam analisis spasial, pemodelan geospasial, pengolahan citra satelit, serta pembuatan peta tematik untuk mendukung perencanaan wilayah pesisir dan tata ruang.
+                    </p>
+                    </div>
+                </div>
+              
+                <div class="pengalaman-wrapper">
+                    <div class="foto-keterangan">
+                    <img src="asset/gis2.jpg" alt="Foto Pengalaman">
+                    <h6>Operator GIS</h6>
+                    <span>Indonesia (2021 - 2022)</span>
+                    </div>
+                    <div class="deskripsi-panjang">
+                    <p data-id="Bertugas dalam digitalisasi peta, pengolahan data spasial menggunakan perangkat lunak GIS, serta pemutakhiran database geospasial sebagai bagian dari proyek tata guna lahan dan konservasi." 
+                        data-en="Tasked with map digitization, spatial data processing using GIS software, and updating geospatial databases as part of land use and conservation projects.">
+                        Bertugas dalam digitalisasi peta, pengolahan data spasial menggunakan perangkat lunak GIS, serta pemutakhiran database geospasial sebagai bagian dari proyek tata guna lahan dan konservasi.
+                    </p>
+                    </div>
+                </div>
+              
+                <div class="pengalaman-wrapper">
+                    <div class="foto-keterangan">
+                    <img src="asset/visual.jpg" alt="Foto Pengalaman">
+                    <h6>Operator Penginderaan Jauh (PJ)</h6>
+                    <span>Indonesia (2020 - 2021)</span>
+                    </div>
+                    <div class="deskripsi-panjang">
+                    <p data-id="Mengolah dan menganalisis data citra satelit multi-temporal untuk memetakan tutupan lahan, vegetasi, dan perubahan wilayah pesisir. Terlibat aktif dalam validasi lapangan dan interpretasi citra multispektral." 
+                        data-en="Processed and analyzed multi-temporal satellite imagery to map land cover, vegetation, and coastal changes. Actively involved in field validation and multispectral image interpretation.">
+                        Mengolah dan menganalisis data citra satelit multi-temporal untuk memetakan tutupan lahan, vegetasi, dan perubahan wilayah pesisir. Terlibat aktif dalam validasi lapangan dan interpretasi citra multispektral.
+                    </p>
+                    </div>
+                </div>
+
+                <div class="download-resume">
+                <a href="asset/resume.pdf" class="btn-download" target="_blank">
+                    <i class="fas fa-file-download"></i> Unduh Resume
+                </a>
+                </div>
+
+                <div class="konten-isi">
+                    <p style="text-align: center;"
+                       data-id="Setiap pengalaman profesional saya telah membentuk cara pandang terhadap pentingnya data spasial dalam pengambilan keputusan. Saya percaya bahwa keterpaduan antara analisis teknis dan pemahaman kontekstual akan menghasilkan solusi yang lebih bermakna dan berkelanjutan. Ke depan, saya terus berkomitmen untuk mengembangkan keahlian di bidang geospasial serta berkontribusi pada proyek-proyek yang berdampak positif bagi masyarakat dan lingkungan." 
+                       data-en="Each of my professional experiences has shaped my perspective on the vital role of spatial data in decision-making. I believe that integrating technical analysis with contextual understanding leads to more meaningful and sustainable solutions. Moving forward, I am committed to further developing my expertise in the geospatial field and contributing to impactful projects that benefit both communities and the environment.">
+                      Setiap pengalaman profesional saya telah membentuk cara pandang terhadap pentingnya data spasial dalam pengambilan keputusan. Saya percaya bahwa keterpaduan antara analisis teknis dan pemahaman kontekstual akan menghasilkan solusi yang lebih bermakna dan berkelanjutan. Ke depan, saya terus berkomitmen untuk mengembangkan keahlian di bidang geospasial serta berkontribusi pada proyek-proyek yang berdampak positif bagi masyarakat dan lingkungan.
+                    </p>
+                </div>
+
+                <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+                <div class="center-button">
+                    <a href="index.html#experience" class="btn-back-home">← Back to Home</a>
+                </div>
+            </div>
+        </section>
+    </body> 
+</html>
